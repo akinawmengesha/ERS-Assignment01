@@ -107,8 +107,8 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 - The `printf` function is overridden to use UART for output.
 
 ---
-<img src="uart_ex9.png" width="300">
-<img src="uart_ex92.png" width="300">
+<img src="uart_ex9.png" width="600">
+<img src="uart_ex92.png" width="600">
 ## Exercise 10 (ex10.c)
 
 ### Description:
