@@ -120,7 +120,7 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 - The `printf` function is overridden to use UART for output.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="uart_ex9.png" alt="UART Example 9" width="60%">
+  <img src="images/uart_ex9.png" alt="UART Example 9" width="60%">
 </div>
 
 ---
@@ -142,6 +142,6 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="uart_ex92.png" alt="UART Example 9" width="60%">
+  <img src="images/uart_ex92.png" alt="UART Example 9" width="60%">
 </div>
 ---
