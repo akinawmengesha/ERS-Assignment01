@@ -19,8 +19,6 @@ Check the options in the STM32CubeMX project configurator. It is the editor that
 ### Description:
 This exercise initializes the STM32 microcontroller and controls the onboard LEDs. The green LED is turned on initially, while the blue and red LEDs are turned off. The program then enters an infinite loop where the blue and red LEDs blink alternately with a 1-second delay.
 
----
-
 ### Key Features:
 - **LED Control**: The green LED is turned on, and the blue and red LEDs blink alternately.
 - **HAL Library**: Uses the Hardware Abstraction Layer (HAL) to control GPIO pins and manage delays.
@@ -36,7 +34,6 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 ### Description:
 This exercise extends the LED control functionality by cycling through four different LED states: green, orange, red, and orange again. The LEDs change every second, and the sequence repeats indefinitely.
 
----
 
 ### Key Features:
 - **LED Sequence**: The program cycles through four LED states in a specific sequence, Green, Orange, Red and Orange.
@@ -120,10 +117,11 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 - The `HAL_UART_Transmit` and `HAL_UART_Receive` functions are used for UART communication.
 - The `printf` function is overridden to use UART for output.
 
----
 <div style="display: flex; justify-content: space-between;">
   <img src="uart_ex9.png" alt="UART Example 9" width="60%">
 </div>
+
+---
 
 ## Exercise 10 (ex10.c)
 
@@ -140,7 +138,8 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 - The `HAL_UART_Receive_IT` and `HAL_UART_Transmit_IT` functions are used for interrupt-based UART communication.
 - The `HAL_UART_RxCpltCallback` and `HAL_UART_TxCpltCallback` functions handle UART receive and transmit interrupts, respectively.
 
----
+
 <div style="display: flex; justify-content: space-between;">
   <img src="uart_ex92.png" alt="UART Example 9" width="60%">
 </div>
+---
