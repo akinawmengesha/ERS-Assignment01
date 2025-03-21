@@ -1,9 +1,9 @@
 # ERS-Assignment01 
 
-This report provides an explanation of the exercises implemented in the ERS-Assignment01 project. Each exercise demonstrates different functionalities using the STM32 microcontroller, including LED control, button input, UART communication, and more.
+This report provides an explanation of the exercises implemented in the ERS-Assignment01. Each exercise demonstrates different functionalities using the STM32 microcontroller, including LED control, button input, UART communication, and more.
 
 ---
-
+# I left out Exercise 1 and 2 is mainly concerned with STM32CubeIde software installation and configurations
 ## Exercise 3 (ex3.c)
 
 ### Description:
@@ -55,6 +55,8 @@ This exercise introduces button input to control the LED sequence. The program h
 ### Description:
 This exercise builds on previous LED control exercises by introducing an external interrupt to handle button presses. The program cycles through three modes: clockwise LED sequence, counter-clockwise LED sequence, and all LEDs blinking together. The mode changes when the button is pressed, and the button press is handled using an external interrupt.
 
+Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure PA0 to “External Interrupt Mode with rising edge trigger detection”. Under System core -> NVIC, enable the EXTI line 0 interrupt. (Reference from assignment document)
+
 ### Key Features:
 - **External Interrupt**: The button press is handled using an external interrupt (EXTI) to change the mode.
 - **Multiple Modes**: The program supports three modes for LED control:
@@ -92,6 +94,10 @@ This exercise builds on Exercise 5 by adding a dimming feature to the LEDs with 
 ### Description:
 This exercise demonstrates UART communication. The program initializes UART and prints an increasing counter starting from 0 value every second. It also echoes any received characters back twice.
 
+Note: In this exercise you should initialize and use UART so that you can use printf to print to the serial console
+and see the messages on your PC. To do so, setup the UART in the project configuration. It is done under
+Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment document) . I used minicom, to connect the board in serial mode which can be installed using sudo apt install minicom -y using terminal where i used ubuntu OS.
+
 ### Key Features:
 - **UART Communication**: The program uses UART to send and receive data.
 - **Echo Mode**: Any received character is echoed back twice in the terminal.
@@ -106,6 +112,8 @@ This exercise demonstrates UART communication. The program initializes UART and 
 
 ### Description:
 This exercise extends the UART functionality by using interrupt-based communication. The program prints an increasing counter value every second starting from 0 with led blink respectively and echoes received characters back twice using interrupts.
+
+Note: Use of interrupts for UART. In the configurator, enable activate the USART2 global interrupt under NVIC settings. (Reference from assignment document)
 
 ### Key Features:
 - **Interrupt-Based UART**: The program uses UART interrupts for receiving and transmitting data.
