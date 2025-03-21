@@ -75,7 +75,7 @@ This exercise builds on previous LED control exercises by introducing an externa
 ## Exercise 7 (ex7.c)
 
 ### Description:
-This exercise builds on Exercise 5 by adding a dimming feature to the LEDs. The dimming level can be changed using a long press of the button, while a short press changes the LED sequence mode.
+This exercise builds on Exercise 5 by adding a dimming feature to the LEDs with 100 ms delay. The dimming level can be changed using a long press of the button, while a short press changes the LED sequence mode.
 
 ### Key Features:
 - **Dimming Control**: The LEDs can be dimmed to 100%, 75%, 50%, or 25% brightness.
