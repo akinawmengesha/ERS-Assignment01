@@ -7,13 +7,19 @@ This report provides an explanation of the exercises implemented in the ERS-Assi
 
 Download and install the STM32CubeIDE; the documentation to the IDE can be downloaded [here](https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-stmicroelectronics.pdf). Create a new STM32 Project and in the Board selector tab choose the STM32F407G-DISC1 board. After you select the board, give the project a name, choose the target language (C or C++) and clock on Finish. When asked whether to "Initialize all peripherals with their default mode", click Yes. Try to compile and upload it to the board. To do so, attach the board to your PC using the mini-USB cable. Right-click on the project and choose: "Run As -> STM32 Cortex-M C/C++ Application". I have downloaded the software and created the project using above steps given. Basically you have to use terminal command '/opt/st/stm32cubeide_1.18.0# ./stm32cubeide' with root in order to properly function the STM32 software.  (Reference Assignemnt document). 
 
+---
+
 ## Exercise 2 – Configuring your project
 Check the options in the STM32CubeMX project configurator. It is the editor that opens when creating the project. Later, you can open it by double-clicking the IOC file. The documentation to the configurator is [here](https://www.st.com/resource/en/user_manual/dm00104712-stm32cubemx-for-stm32-configuration-and-initialization-c-code-generation-stmicroelectronics.pdf). In the project configurator you can simplify the dependencies of your project. In the left pane of the configurator (under Categories) disable everything except for entries in the category System Core. Things that are enabled are marked with a green tick symbol. You may also set the pins shown in yellow to their Reset state. Save the IOC file and choose to regenerate the project files. Inspect the sources of the project to get a bit better understanding. Your entry point is in the file Core/Src/main.c. Note that you have to insert your code only to places in-between USER CODE BEGIN and USER CODE END tags. (Reference Assignemnt document).
+
+---
 
 ## Exercise 3 (ex3.c)
 
 ### Description:
 This exercise initializes the STM32 microcontroller and controls the onboard LEDs. The green LED is turned on initially, while the blue and red LEDs are turned off. The program then enters an infinite loop where the blue and red LEDs blink alternately with a 1-second delay.
+
+---
 
 ### Key Features:
 - **LED Control**: The green LED is turned on, and the blue and red LEDs blink alternately.
@@ -29,6 +35,8 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 
 ### Description:
 This exercise extends the LED control functionality by cycling through four different LED states: green, orange, red, and orange again. The LEDs change every second, and the sequence repeats indefinitely.
+
+---
 
 ### Key Features:
 - **LED Sequence**: The program cycles through four LED states in a specific sequence, Green, Orange, Red and Orange.
