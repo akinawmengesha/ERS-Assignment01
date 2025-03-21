@@ -108,8 +108,9 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 
 ---
 <div style="display: flex; justify-content: space-between;">
-  <img src="uart_ex9.png" alt="UART Example 9" width="50%">
+  <img src="uart_ex9.png" alt="UART Example 9" width="60%">
 </div>
+
 ## Exercise 10 (ex10.c)
 
 ### Description:
@@ -127,5 +128,5 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 
 ---
 <div style="display: flex; justify-content: space-between;">
-  <img src="uart_ex92.png" alt="UART Example 9" width="50%">
+  <img src="uart_ex92.png" alt="UART Example 9" width="60%">
 </div>
