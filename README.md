@@ -1,9 +1,11 @@
 # ERS-Assignment01 
 
-This report provides an explanation of the exercises implemented in the ERS-Assignment01. Each exercise demonstrates different functionalities using the STM32 microcontroller, including LED control, button input, UART communication, and more.
+This report provides an explanation of the exercises implemented in the ERS-Assignment01. Each exercise demonstrates different functionalities using the STM32 microcontroller with board selector STM32F407G-DISC1 , including LED control, button input, UART communication, and more.
 
 ---
-# I left out Exercise 1 and 2 because it is mainly concerned with STM32CubeIde software installation and configurations
+## Exercise 1 Preparing your work environment 
+Download and install the STM32CubeIDE; the documentation to the IDE can be downloaded [here](https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-stmicroelectronics.pdf). Create a new STM32 Project and in the Board selector tab choose the STM32F407G-DISC1 board. After you select the board, give the project a name, choose the target language (C or C++) and clock on Finish. When asked whether to "Initialize all peripherals with their default mode", click Yes. Try to compile and upload it to the board. To do so, attach the board to your PC using the mini-USB cable. Right-click on the project and choose: "Run As -> STM32 Cortex-M C/C++ Application".
+
 ## Exercise 3 (ex3.c)
 
 ### Description:
