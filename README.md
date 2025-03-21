@@ -85,6 +85,8 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
 - **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
 - **Timing**: The `HAL_GetTick` function is used to manage timing for LED toggling and debouncing.
 
+---
+
 ## Exercise 7 (ex7.c)
 
 ### Description:
