@@ -108,7 +108,8 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 
 ---
 <div style="display: flex; justify-content: space-between;">
-<img src="uart_ex9.png" width="600"> <img src="uart_ex92.png" width="600">
+  <img src="uart_ex9.png" alt="UART Example 9" width="45%">
+  <img src="uart_ex92.png" alt="UART Example 92" width="45%">
 </div>
 ## Exercise 10 (ex10.c)
 
