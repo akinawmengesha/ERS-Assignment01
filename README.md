@@ -108,8 +108,7 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 
 ---
 <div style="display: flex; justify-content: space-between;">
-  <img src="uart_ex9.png" alt="UART Example 9" width="45%">
-  <img src="uart_ex92.png" alt="UART Example 92" width="45%">
+  <img src="uart_ex9.png" alt="UART Example 9" width="50%">
 </div>
 ## Exercise 10 (ex10.c)
 
@@ -127,3 +126,6 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 - The `HAL_UART_RxCpltCallback` and `HAL_UART_TxCpltCallback` functions handle UART receive and transmit interrupts, respectively.
 
 ---
+<div style="display: flex; justify-content: space-between;">
+  <img src="uart_ex92.png" alt="UART Example 9" width="50%">
+</div>
