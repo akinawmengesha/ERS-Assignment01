@@ -3,7 +3,7 @@
 This report provides an explanation of the exercises implemented in the ERS-Assignment01. Each exercise demonstrates different functionalities using the STM32 microcontroller, including LED control, button input, UART communication, and more.
 
 ---
-# I left out Exercise 1 and 2 is mainly concerned with STM32CubeIde software installation and configurations
+# I left out Exercise 1 and 2 because it is mainly concerned with STM32CubeIde software installation and configurations
 ## Exercise 3 (ex3.c)
 
 ### Description:
