@@ -35,7 +35,7 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 ## Exercise 4 (ex4.c)
 
 ### Description:
-This exercise extends Debugging the LED control functionality by cycling through four different LED states: green, orange, red, and orange again. The LEDs change every second, and the sequence repeats indefinitely.
+This exercise extends debugging the LED control functionality by cycling through four different LED states: green, orange, red, and orange again. The LEDs change every second, and the sequence repeats indefinitely.
 
 
 ### Key Features:
