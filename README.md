@@ -50,8 +50,8 @@ This exercise extends the LED control functionality by cycling through four diff
 <p align="center">
   <img src="Gif/ex4.gif" alt="Exercise 4 Demo"/>
 </p>
----
 
+---
 
 ## Exercise 5 (ex5.c)
 
@@ -169,7 +169,7 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 - The `HAL_UART_RxCpltCallback` and `HAL_UART_TxCpltCallback` functions handle UART receive and transmit interrupts, respectively.
 
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="images/uart_ex92.png" alt="UART Example 9" width="60%">
-</div>
+<p align="center">
+  <img src="Gif/ex10.gif" alt="Exercise 10 Demo"/>
+</p>
 ---
