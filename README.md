@@ -70,6 +70,7 @@ This exercise introduces button input to control the LED sequence. The program h
 <p align="center">
   <img src="Gif/ex5.gif" alt="Exercise 5 Demo"/>
 </p>
+
 ---
 
 
