@@ -70,7 +70,7 @@ This exercise introduces button input to control the LED sequence. The program h
 </p>
 
 ---
-# Exercise 6 (ex6.c)
+## Exercise 6 (ex6.c)
 
 ### Description:
 This exercise builds on previous LED control exercises by introducing an external interrupt to handle button presses. The program cycles through three modes: clockwise LED sequence, counter-clockwise LED sequence, and all LEDs blinking together. The mode changes when the button is pressed, and the button press is handled using an external interrupt.
@@ -99,7 +99,7 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
 
 ---
 ## Exercise 7 (ex7.c)
-
+### Description:
 The ex7.c file extends Exercise 6 by implementing a 100ms delay after the release of the button before switching LED modes. This is done using an external interrupt-based approach that detects both rising and falling edges of the button press.
 
 - **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
