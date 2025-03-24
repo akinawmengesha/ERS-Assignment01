@@ -28,6 +28,9 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 - The `HAL_Delay` function introduces a 1-second delay between LED toggles.
 
 ---
+<div style="display: flex; justify-content: space-between;">
+  ![Ex3](Gif/ex3.gif)
+</div>
 
 ## Exercise 4 (ex4.c)
 
@@ -119,9 +122,7 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 - The `HAL_UART_Transmit` and `HAL_UART_Receive` functions are used for UART communication.
 - The `printf` function is overridden to use UART for output.
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="images/uart_ex9.png" alt="UART Example 9" width="60%">
-</div>
+
 
 ---
 
