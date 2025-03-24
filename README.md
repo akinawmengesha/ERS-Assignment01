@@ -108,9 +108,8 @@ The ex7.c file extends Exercise 6 by implementing a 100ms delay after the releas
 <p align="center">
   <img src="Gif/ex7.gif" alt="Exercise 7 Demo"/>
 </p>
+
 ---
-
-
 ## Exercise 8 (ex8.c)
 
 ### Description:
