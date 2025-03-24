@@ -25,7 +25,6 @@
 #include <stdio.h>
 #include <stdint.h>
 /* USER CODE END Includes */
-
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
 uint8_t uartRxData;  // Variable to store received character
