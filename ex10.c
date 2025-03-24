@@ -228,18 +228,19 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 }
 
+
 /* USER CODE BEGIN 4 */
 // Override __io_putchar to use UART for printf
 int __io_putchar(int ch)
 {
-  HAL_UART_Transmit_IT(&huart2, (uint8_t *)&ch, 1);
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY); // Changed to blocking transmit
   return ch;
 }
 
 // Override _write to use UART for printf
 int _write(int file, char *ptr, int len)
 {
-  HAL_UART_Transmit_IT(&huart2, (uint8_t *)ptr, len);
+  HAL_UART_Transmit(&huart2, (uint8_t *)ptr, len, HAL_MAX_DELAY); // Changed to blocking transmit
   return len;
 }
 /* USER CODE END 4 */
@@ -269,4 +270,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   printf("Wrong parameters value: file %s on line %d\r\n", file, line);
 }
 #endif /* USE_FULL_ASSERT */
-
