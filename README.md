@@ -94,8 +94,7 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
   - In **Mode 0 (Clockwise)**, the LEDs are turned on in the sequence: Green → Orange → Red → Blue.
   - In **Mode 1 (Counter-clockwise)**, the LEDs are turned on in the sequence: Blue → Red → Orange → Green.
   - In **Mode 2 (All Blink)**, all LEDs toggle on and off together every 500ms.
-- **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
-- **Timing**: The `HAL_GetTick` function is used to manage timing for LED toggling and debouncing.
+
   
 <p align="center">
   <img src="Gif/ex6.gif" alt="Exercise 6 Demo"/>
@@ -104,9 +103,11 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
 
 ## Exercise 7 (ex7.c)
 
-The ex7.c file extends Exercise 6 by implementing a 100ms delay after the release of the button before switching LED modes. This is done using an interrupt-based approach that detects both rising and falling edges of the button press.
+The ex7.c file extends Exercise 6 by implementing a 100ms delay after the release of the button before switching LED modes. This is done using an external interrupt-based approach that detects both rising and falling edges of the button press.
 
-Using HAL_GetTick() for precise timing.
+- **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
+- **Timing**: The `HAL_GetTick` function is used to manage timing for LED toggling and debouncing.
+- 
 <p align="center">
   <img src="Gif/ex7.gif" alt="Exercise 7 Demo"/>
 </p>
