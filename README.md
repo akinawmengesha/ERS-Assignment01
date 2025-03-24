@@ -104,7 +104,7 @@ The ex7.c file extends Exercise 6 by implementing a 100ms delay after the releas
 
 - **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
 - **Timing**: The `HAL_GetTick` function is used to manage timing for LED toggling and debouncing.
-- 
+  
 <p align="center">
   <img src="Gif/ex7.gif" alt="Exercise 7 Demo"/>
 </p>
