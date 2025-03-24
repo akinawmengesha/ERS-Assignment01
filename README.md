@@ -1,6 +1,6 @@
 # ERS-Assignment01 
 
-This report provides an explanation of the exercises implemented in the ERS-Assignment 01 of Embedded and Real Time Systems - NSWE001 course. Each exercise demonstrates different functionalities using the STM32 microcontroller with board selector STM32F407G-DISC1 , including LED control, button input, UART communication, and more.
+This report provides an explanation of the exercises implemented in the ERS-Assignment 01 of Embedded and Real Time Systems - NSWE001 course. Each exercise demonstrates different functionalities using the STM32 microcontroller with board selector STM32F407G-DISC1 , including LED control, button input or interupt , UART communication, and more.
 
 ---
 ## Exercise 1 Preparing the work environment 
