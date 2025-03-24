@@ -26,11 +26,12 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 ### Code Explanation:
 - The `HAL_GPIO_WritePin` function is used to set or reset the GPIO pins connected to the LEDs.
 - The `HAL_Delay` function introduces a 1-second delay between LED toggles.
-
----
+  
 <p align="center">
   <img src="Gif/ex3.gif" alt="Exercise 3 Demo"/>
 </p>
+---
+
 
 ## Exercise 4 (ex4.c)
 
@@ -45,8 +46,12 @@ This exercise extends the LED control functionality by cycling through four diff
 ### Code Explanation:
 - The `currentLed` variable is incremented and reset using modulo arithmetic to cycle through the LED states.
 - The `HAL_GPIO_WritePin` function is used to turn on the appropriate LED based on the `currentLed` value.
-
+  
+<p align="center">
+  <img src="Gif/ex4.gif" alt="Exercise 4 Demo"/>
+</p>
 ---
+
 
 ## Exercise 5 (ex5.c)
 
@@ -61,8 +66,12 @@ This exercise introduces button input to control the LED sequence. The program h
 ### Code Explanation:
 - The `HAL_GPIO_ReadPin` function reads the button state, and debouncing is implemented using a timestamp.
 - The `mode` variable is incremented and reset using modulo arithmetic to cycle through the modes.
-
+  
+<p align="center">
+  <img src="Gif/ex5.gif" alt="Exercise 5 Demo"/>
+</p>
 ---
+
 
 # Exercise 6 (ex6.c)
 
@@ -87,10 +96,24 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
   - In **Mode 2 (All Blink)**, all LEDs toggle on and off together every 500ms.
 - **Debouncing**: The program waits for the button to be released after a press to avoid multiple triggers.
 - **Timing**: The `HAL_GetTick` function is used to manage timing for LED toggling and debouncing.
-
+  
+<p align="center">
+  <img src="Gif/ex6.gif" alt="Exercise 6 Demo"/>
+</p>
 ---
 
 ## Exercise 7 (ex7.c)
+
+The ex7.c file extends Exercise 6 by implementing a 100ms delay after the release of the button before switching LED modes. This is done using an interrupt-based approach that detects both rising and falling edges of the button press.
+
+Using HAL_GetTick() for precise timing.
+<p align="center">
+  <img src="Gif/ex7.gif" alt="Exercise 7 Demo"/>
+</p>
+---
+
+
+## Exercise 8 (ex8.c)
 
 ### Description:
 This exercise builds on Exercise 5 by adding a dimming feature to the LEDs with 100 ms delay. The dimming level can be changed using a long press of the button, while a short press changes the LED sequence mode.
@@ -103,6 +126,9 @@ This exercise builds on Exercise 5 by adding a dimming feature to the LEDs with 
 - The `dimmingLevel` variable is used to track the current dimming level.
 - The `dimmingCounter` variable is used to implement PWM-like dimming by toggling the LEDs at different intervals.
 
+<p align="center">
+  <img src="Gif/ex8.gif" alt="Exercise 8 Demo"/>
+</p>
 ---
 
 ## Exercise 9 (ex9.c)
@@ -122,8 +148,9 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 - The `HAL_UART_Transmit` and `HAL_UART_Receive` functions are used for UART communication.
 - The `printf` function is overridden to use UART for output.
 
-
-
+<p align="center">
+  <img src="Gif/ex9.gif" alt="Exercise 9 Demo"/>
+</p>
 ---
 
 ## Exercise 10 (ex10.c)
