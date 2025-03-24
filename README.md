@@ -30,9 +30,8 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 <p align="center">
   <img src="Gif/ex3.gif" alt="Exercise 3 Demo"/>
 </p>
+
 ---
-
-
 ## Exercise 4 (ex4.c)
 
 ### Description:
@@ -52,7 +51,6 @@ This exercise extends the LED control functionality by cycling through four diff
 </p>
 
 ---
-
 ## Exercise 5 (ex5.c)
 
 ### Description:
@@ -72,8 +70,6 @@ This exercise introduces button input to control the LED sequence. The program h
 </p>
 
 ---
-
-
 # Exercise 6 (ex6.c)
 
 ### Description:
@@ -100,8 +96,8 @@ Note: Set PA0 functionality to GPIO_EXTI0. Under System core -> GPIO, configure 
 <p align="center">
   <img src="Gif/ex6.gif" alt="Exercise 6 Demo"/>
 </p>
----
 
+---
 ## Exercise 7 (ex7.c)
 
 The ex7.c file extends Exercise 6 by implementing a 100ms delay after the release of the button before switching LED modes. This is done using an external interrupt-based approach that detects both rising and falling edges of the button press.
@@ -131,8 +127,8 @@ This exercise builds on Exercise 5 by adding a dimming feature to the LEDs with 
 <p align="center">
   <img src="Gif/ex8.gif" alt="Exercise 8 Demo"/>
 </p>
----
 
+---
 ## Exercise 9 (ex9.c)
 
 ### Description:
@@ -153,8 +149,8 @@ Connectivity->USART2. Choose the Asynchronous mode. (Reference from assignment d
 <p align="center">
   <img src="Gif/ex9.gif" alt="Exercise 9 Demo"/>
 </p>
----
 
+---
 ## Exercise 10 (ex10.c)
 
 ### Description:
@@ -174,4 +170,5 @@ Note: Use of interrupts for UART. In the configurator, enable activate the USART
 <p align="center">
   <img src="Gif/ex10.gif" alt="Exercise 10 Demo"/>
 </p>
+
 ---
