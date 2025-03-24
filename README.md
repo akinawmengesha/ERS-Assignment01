@@ -28,9 +28,9 @@ This exercise initializes the STM32 microcontroller and controls the onboard LED
 - The `HAL_Delay` function introduces a 1-second delay between LED toggles.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-  ![Ex3](Gif/ex3.gif)
-</div>
+<p align="center">
+  <img src="Gif/ex3.gif" alt="Exercise 3 Demo"/>
+</p>
 
 ## Exercise 4 (ex4.c)
 
